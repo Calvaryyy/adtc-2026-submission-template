@@ -1,37 +1,37 @@
 {
-  "team_id": "your-team-id",
-  "domain": "coding_assistants",
+  "team_id": "Zoe Katchy",
+  "domain": "autonomous_ai_agents",
   "language_scope": ["en"],
-  "african_alpha_claim": false,
+  "african_alpha_claim": true,
   "budget_laptop_claim": true,
   "submitter": {
-    "name": "your-name",
-    "email": "your-email@domain.com",
-    "github_handle": "your-github"
+    "name": "Zoe Michael Katchy",
+    "email": "zoekatchy@proton.me",
+    "github_handle": "Calvaryyy"
   },
   "cross_disciplinary_pairing": {
-    "discipline": "education",
+    "discipline": "software_engineering",
     "load_bearing": true,
-    "description": "Brief description of how your model serves a real-world domain."
+    "description": "Lucy is a working offline coding assistant and autonomous dev agent: it plans, edits real files, runs commands, and verifies its own tool calls against a local codebase. It also connects to real software-engineering and knowledge-work tools (Penpot for design, AppFlowy for docs/PM, Cal.com for scheduling) via a genuine MCP client, so the software-engineering pairing is integral to what the submission does, not a narrative layer added after the fact."
   },
   "test_prompts": [
     {
       "prompt_id": "tp_001",
-      "prompt": "Write a Python function that reads a CSV file and returns the column with the highest mean value."
+      "prompt": "This project has a data/ folder with several CSV files of student grades. Find all CSVs, compute the average score per file, write a summary report to REPORT_summary.md ranking the files by average score, and flag any file that has missing or malformed rows."
     },
     {
       "prompt_id": "tp_002",
-      "prompt": "Explain the difference between a list and a tuple in Python, and give one example where each is the better choice."
+      "prompt": "In this repo, the function calculate_discount in pricing.py has a bug where discounts over 50% are applied incorrectly for bulk orders. Find the bug, fix it, add a regression test in test_pricing.py covering the bulk plus high-discount case, and run the test suite to confirm it passes."
     }
   ],
   "model": {
-    "name": "SmolLM2-135M-Instruct-Q4_K_M",
+    "name": "Qwen2.5-Coder-7B-Instruct-Q4_K_M",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "135M",
+    "parameters_estimate": "7B",
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+    "model_path": "model/qwen2.5-coder-7b-instruct-q4_k_m.gguf"
   }
 }
